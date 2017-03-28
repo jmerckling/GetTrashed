@@ -1080,6 +1080,11 @@
                                                                   <Font size="16.0" />
                                                                </font>
                                                             </CheckBox>
+                                                            <CheckBox fx:id="tonicWaterCheckbox" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Tonic Water">
+                                                               <font>
+                                                                  <Font size="16.0" />
+                                                               </font>
+                                                            </CheckBox>
                                                             <CheckBox fx:id="sodaCherryColaCheckbox" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" text="Cherry Cola">
                                                                <font>
                                                                   <Font size="16.0" />
@@ -1465,6 +1470,11 @@
                                                                      </font>
                                                                   </CheckBox>
                                                                   <CheckBox fx:id="fruitBananaCheckbox" mnemonicParsing="false" text="Banana">
+                                                                     <font>
+                                                                        <Font size="15.0" />
+                                                                     </font>
+                                                                  </CheckBox>
+                                                                  <CheckBox fx:id="fruitCherryCheckbox" layoutX="10.0" layoutY="32.0" mnemonicParsing="false" text="Cherry">
                                                                      <font>
                                                                         <Font size="15.0" />
                                                                      </font>

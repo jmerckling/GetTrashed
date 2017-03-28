@@ -551,6 +551,7 @@ public class MainViewController implements Initializable {
 // The Checkbox Functions
 	public void checkAllMixers(boolean checkStatus) {
     	sodaWaterCheckbox.setSelected(checkStatus);
+    	tonicWaterCheckbox.setSelected(checkStatus); //New addition
     	sodaCherryColaCheckbox.setSelected(checkStatus);
     	sodaColaCheckbox.setSelected(checkStatus);
     	sodaDrPepperCheckbox.setSelected(checkStatus);
@@ -642,6 +643,7 @@ public class MainViewController implements Initializable {
     	orangeBittersCheckbox.setSelected(checkStatus);
     	fruitAppleCheckbox.setSelected(checkStatus);
     	fruitBananaCheckbox.setSelected(checkStatus);
+    	fruitCherryCheckbox.setSelected(checkStatus); //New addition
     	fruitCranberriesCheckbox.setSelected(checkStatus);
     	fruitGrapesCheckbox.setSelected(checkStatus);
     	fruitKiwiCheckbox.setSelected(checkStatus);
@@ -1460,6 +1462,9 @@ public class MainViewController implements Initializable {
 				if(sodaWaterCheckbox.isSelected()){
 					filterIngredients.add("sodaWater");
 				}
+				if(tonicWaterCheckbox.isSelected()){ //New Addition
+					filterIngredients.add("tonicWater");
+				}
 				
 				if(sodaCherryColaCheckbox.isSelected()){
 					filterIngredients.add("sodaCherryCola");
@@ -1687,6 +1692,11 @@ public class MainViewController implements Initializable {
 				
 				if(fruitBananaCheckbox.isSelected()){
 					filterIngredients.add("fruitBanana");
+				}
+				
+				if(fruitCherryCheckbox.isSelected()){ //New addition
+					filterIngredients.add("fruitCherry");
+					filterIngredients.add("fruitMaraschinoCherry");
 				}
 				
 				if(fruitCranberriesCheckbox.isSelected()){
@@ -2227,6 +2237,8 @@ public class MainViewController implements Initializable {
 	@FXML
 	public CheckBox sodaWaterCheckbox;
 	@FXML
+	public CheckBox tonicWaterCheckbox; // New addition
+	@FXML
 	public CheckBox sodaCherryColaCheckbox;
 	@FXML
 	public CheckBox sodaColaCheckbox;
@@ -2348,6 +2360,8 @@ public class MainViewController implements Initializable {
 	public CheckBox fruitAppleCheckbox;
 	@FXML
 	public CheckBox fruitBananaCheckbox;
+	@FXML
+	public CheckBox fruitCherryCheckbox; // New addition
 	@FXML
 	public CheckBox fruitCranberriesCheckbox;
 	@FXML
