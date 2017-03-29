@@ -635,11 +635,13 @@ public class MainViewController implements Initializable {
     	gingerCheckbox.setSelected(checkStatus);
     	clovesCheckbox.setSelected(checkStatus);
     	cardamomCheckbox.setSelected(checkStatus);
+    	cinnamonCheckbox.setSelected(checkStatus); //New addition
     	bittersCheckbox.setSelected(checkStatus);
     	angosturaBittersCheckbox.setSelected(checkStatus);
     	anisCheckbox.setSelected(checkStatus);
     	honeyCheckbox.setSelected(checkStatus);
     	mintCheckbox.setSelected(checkStatus);
+    	nutmegCheckbox.setSelected(checkStatus); //New addition
     	orangeBittersCheckbox.setSelected(checkStatus);
     	fruitAppleCheckbox.setSelected(checkStatus);
     	fruitBananaCheckbox.setSelected(checkStatus);
@@ -1461,6 +1463,7 @@ public class MainViewController implements Initializable {
 				
 				if(sodaWaterCheckbox.isSelected()){
 					filterIngredients.add("sodaWater");
+					filterIngredients.add("carbonatedWater");
 				}
 				if(tonicWaterCheckbox.isSelected()){ //New Addition
 					filterIngredients.add("tonicWater");
@@ -1516,6 +1519,7 @@ public class MainViewController implements Initializable {
 				
 				if(eggCheckbox.isSelected()){
 					filterIngredients.add("egg");
+					filterIngredients.add("eggWhite");
 				}
 				
 				if(eggnogCheckbox.isSelected()){
@@ -1612,6 +1616,7 @@ public class MainViewController implements Initializable {
 				
 				if(sugarCheckbox.isSelected()){
 					filterIngredients.add("sugar");
+					filterIngredients.add("powderedSugar");
 				}
 				
 				if(tabascoSauceCheckbox.isSelected()){
@@ -1646,6 +1651,10 @@ public class MainViewController implements Initializable {
 					filterIngredients.add("cardamom");
 				}
 				
+				if(cinnamonCheckbox.isSelected()){ //New addition
+					filterIngredients.add("cinnamon");
+				}
+				
 				if(clovesCheckbox.isSelected()){
 					filterIngredients.add("cloves");
 				}
@@ -1672,6 +1681,10 @@ public class MainViewController implements Initializable {
 				
 				if(mintCheckbox.isSelected()){
 					filterIngredients.add("mint");
+				}
+				
+				if(nutmegCheckbox.isSelected()){ //New addition
+					filterIngredients.add("nutmeg");
 				}
 				
 				if(orangeBittersCheckbox.isSelected()){
@@ -2346,11 +2359,15 @@ public class MainViewController implements Initializable {
 	@FXML
 	public CheckBox cardamomCheckbox;
 	@FXML
+	public CheckBox cinnamonCheckbox; //new addition
+	@FXML
 	public CheckBox clovesCheckbox;
 	@FXML
 	public CheckBox gingerCheckbox;
 	@FXML
 	public CheckBox mintCheckbox;
+	@FXML
+	public CheckBox nutmegCheckbox; //new addition
 	@FXML
 	public CheckBox orangeBittersCheckbox;
 
