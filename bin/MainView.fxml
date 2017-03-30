@@ -1361,6 +1361,11 @@
                                                                         <Font size="16.0" />
                                                                      </font>
                                                                   </CheckBox>
+                                                                  <CheckBox fx:id="lightCreamCheckbox" layoutX="10.0" layoutY="280.0" mnemonicParsing="false" text="Light Cream">
+                                                                     <font>
+                                                                        <Font size="16.0" />
+                                                                     </font>
+                                                                  </CheckBox>
                                                                   <CheckBox fx:id="yoghurtCheckbox" mnemonicParsing="false" text="Yoghurt">
                                                                      <font>
                                                                         <Font size="16.0" />

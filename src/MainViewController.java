@@ -582,6 +582,7 @@ public class MainViewController implements Initializable {
   waterCheckbox.setSelected(checkStatus);
   halfAndHalfCheckbox.setSelected(checkStatus);
   heavyCreamCheckbox.setSelected(checkStatus);
+  lightCreamCheckbox.setSelected(checkStatus); // new addition
   hotChocolateCheckbox.setSelected(checkStatus);
   juiceAppleCheckbox.setSelected(checkStatus);
   juiceCiderCheckbox.setSelected(checkStatus);
@@ -1669,6 +1670,10 @@ public class MainViewController implements Initializable {
     if (heavyCreamCheckbox.isSelected()) {
      filterIngredients.add("heavyCream");
     }
+    
+    if (lightCreamCheckbox.isSelected()) {
+        filterIngredients.add("lightCream"); //new addition
+       }
 
     if (honeyCheckbox.isSelected()) {
      filterIngredients.add("honey");
@@ -2296,6 +2301,8 @@ public class MainViewController implements Initializable {
  public CheckBox halfAndHalfCheckbox;
  @FXML
  public CheckBox heavyCreamCheckbox;
+ @FXML
+ public CheckBox lightCreamCheckbox; //new addition
 
  //Common Kitchen
  @FXML
