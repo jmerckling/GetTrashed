@@ -772,6 +772,7 @@ public class MainViewController implements Initializable {
   liqueurRaspberryCheckbox.setSelected(checkStatus);
   liqueurKiwiCheckbox.setSelected(checkStatus);
   liqueurMelonCheckbox.setSelected(checkStatus);
+  liqueurMaraschinoCheckbox.setSelected(checkStatus); //new addition
   liqueurMidoriMelonCheckbox.setSelected(checkStatus);
   liqueurPeachCheckbox.setSelected(checkStatus);
   liqueurStrawberryCheckbox.setSelected(checkStatus);
@@ -1348,6 +1349,10 @@ public class MainViewController implements Initializable {
     if (liqueurMelonCheckbox.isSelected()) {
      filterIngredients.add("liqueurMelon");
     }
+    
+    if (liqueurMaraschinoCheckbox.isSelected()) { //new addition
+        filterIngredients.add("liqueurMaraschino");
+       }
 
     if (liqueurMidoriMelonCheckbox.isSelected()) {
      filterIngredients.add("liqueurMidoriMelon");
@@ -2189,6 +2194,8 @@ public class MainViewController implements Initializable {
  public CheckBox liqueurKiwiCheckbox;
  @FXML
  public CheckBox liqueurMelonCheckbox;
+ @FXML
+ public CheckBox liqueurMaraschinoCheckbox; //new addition
  @FXML
  public CheckBox liqueurMidoriMelonCheckbox;
  @FXML
