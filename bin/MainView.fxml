@@ -223,7 +223,7 @@
                                                                         <Font size="15.0" />
                                                                      </font>
                                                                   </CheckBox>
-                                                                  <CheckBox fx:id="rumLightCheckbox" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" text="LIght Rum">
+                                                                  <CheckBox fx:id="rumLightCheckbox" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" text="Light Rum">
                                                                      <font>
                                                                         <Font size="15.0" />
                                                                      </font>
@@ -239,6 +239,11 @@
                                                                      </font>
                                                                   </CheckBox>
                                                                   <CheckBox fx:id="rumSpicedCheckbox" layoutX="10.0" layoutY="250.0" mnemonicParsing="false" text="Spiced Rum">
+                                                                     <font>
+                                                                        <Font size="15.0" />
+                                                                     </font>
+                                                                  </CheckBox>
+                                                                  <CheckBox fx:id="rum151Checkbox" layoutX="10.0" layoutY="262.0" mnemonicParsing="false" text="151 Proof Rum">
                                                                      <font>
                                                                         <Font size="15.0" />
                                                                      </font>

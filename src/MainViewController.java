@@ -684,6 +684,7 @@ public class MainViewController implements Initializable {
   rumMalibuCheckbox.setSelected(checkStatus);
   rumOrangeCheckbox.setSelected(checkStatus);
   rumSpicedCheckbox.setSelected(checkStatus);
+  rum151Checkbox.setSelected(checkStatus); //new addition
   rumCheckbox.setSelected(checkStatus);
   vodkaAbsolutCitronCheckbox.setSelected(checkStatus);
   vodkaAbsolutKurantCheckbox.setSelected(checkStatus);
@@ -862,6 +863,7 @@ public class MainViewController implements Initializable {
   rumMalibuCheckbox.setSelected(true);
   rumOrangeCheckbox.setSelected(true);
   rumSpicedCheckbox.setSelected(true);
+  rum151Checkbox.setSelected(true); //new addition
   rumCheckbox.setSelected(true);
  }
 
@@ -960,6 +962,10 @@ public class MainViewController implements Initializable {
     if (rumSpicedCheckbox.isSelected()) {
      filterIngredients.add("rumSpiced");
     }
+    
+    if (rum151Checkbox.isSelected()) {
+        filterIngredients.add("rum151");
+       }
 
     if (rumCheckbox.isSelected()) {
      filterIngredients.add("rum");
@@ -1541,6 +1547,7 @@ public class MainViewController implements Initializable {
 
     if (vanillaIceCreamCheckbox.isSelected()) {
      filterIngredients.add("vanillaIceCream");
+     filterIngredients.add("iceCream");
     }
 
     if (whippingCreamCheckbox.isSelected()) {
@@ -1976,6 +1983,8 @@ public class MainViewController implements Initializable {
  public CheckBox rumOrangeCheckbox;
  @FXML
  public CheckBox rumSpicedCheckbox;
+ @FXML
+ public CheckBox rum151Checkbox; //new addition
  @FXML
  public CheckBox rumCheckbox;
 
